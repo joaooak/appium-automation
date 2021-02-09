@@ -1,0 +1,9 @@
+Ferramentas utilizadas:
+
+Appium
+Selenium
+IntelliJ (Java)
+Cucumber
+Android Studio
+GitHub
+
