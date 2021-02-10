@@ -1,16 +1,19 @@
 package steps;
 
 import appobjects.ConfigMenuAppObjects;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class SelectDifficultySteps
 {
     ConfigMenuAppObjects appObjects = new ConfigMenuAppObjects(Hooks.androidDriver);
+
+    //Other variables
+    String expectedResultTrue = "true";
 
     @Dado("que ignoro o login automático")
     public void queIgnoroOLoginAutomatico() throws Exception
@@ -30,10 +33,16 @@ public class SelectDifficultySteps
     {
         appObjects.openDifficultyMenu();
     }
-    @Então("seleciono o nível Médio")
+    @E("seleciono o nível Médio")
     public void queSelecionoONivel() throws Exception
     {
         appObjects.selectDifficultyOption();
+    }
+    @Então("valido que foi alterado o nível")
+    public void validoQueFoiAlteradoONível() throws Exception
+    {
+        String resultReturn = appObjects.difficultyLevelValidation();
+        assertEquals(expectedResultTrue, resultReturn);
     }
 
 }

@@ -8,4 +8,5 @@ Funcionalidade: Mudar as configurações do jogo
     Dado que ignoro o login automático
     E que eu abro as configurações
     E que eu abro as opções de dificuldade
-    Então seleciono o nível Médio
+    E seleciono o nível Médio
+    Então valido que foi alterado o nível
