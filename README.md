@@ -11,7 +11,7 @@
       • Appium
       • Android Studio
     • Clonar o projeto do GitHub, e abri-lo no IntelliJ
-        • Link: https://github.com/jclira07/desafio-qa-gazeus
+        • Link: https://github.com/jclira07/appium-automation
     • Instalar o aplicativo “Tranca Jogatina” em um celular ou tablet com Android.
     • Habilitar o modo desenvolvedor, e ativar a opção de Debug no aparelho.
     • Conectar o aparelho no computador através de um cabo.
