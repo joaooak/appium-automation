@@ -1,4 +1,4 @@
-# Automação em Appium - Joao Lira Neto
+# Automação em Appium
     Aplicação feita em Java com os frameworks Cucumber, JUnit, Selenium e Appium para demonstrar o uso de BDD no jogo Tranca Jogatina
     Testes de interface solicitados por e-mail.
 
